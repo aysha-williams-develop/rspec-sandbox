@@ -1,8 +1,5 @@
 class GroundConditions
-  def initialize(weather)
-    @weather = weather
-  end
-  def is_wet
-    [:rain, :snow].include?(@weather)
+  def self.is_wet(weather)
+    [:rain, :snow].include?(weather)
   end
 end

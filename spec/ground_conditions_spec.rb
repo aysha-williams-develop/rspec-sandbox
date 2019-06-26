@@ -3,7 +3,7 @@ require 'ground_conditions'
 
 describe GroundConditions do
   describe "#is_wet" do
-    subject { described_class.new(weather).is_wet }
+    subject { described_class.is_wet(weather) }
 
     context "when it is raining" do
       let(:weather) { :rain }
